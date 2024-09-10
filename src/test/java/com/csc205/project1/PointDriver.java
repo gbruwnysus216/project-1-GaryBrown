@@ -22,14 +22,15 @@ public class PointDriver {
         System.out.println(p2.toString());
 
         //Distance between points
-        System.out.println("This distance from point 1 to point 2 is:"+ p1.distance(p2));
+        System.out.printf("This distance from point 1 to point 2 is: %.2f\n",p1.distance(p2));
 
         //rotate point 1
         p1.rotate(90);
-        System.out.println("The point p1 location after rotation is:"+ p1.toString());
+        System.out.println("The point p1 location after rotation is:"+p1.toString());
 
         //Distance between points after rotation
-        System.out.println("This distance from point 1 to point 2 is:"+ p1.distance(p2));
+        System.out.printf("This distance from point 1 to point 2 is: %.2f\n",p1.distance(p2));
+        //System.out.println("This distance from"+p1.counter()+ "to point 2 is:"+p1.distance(p2));
 
     }
 }
