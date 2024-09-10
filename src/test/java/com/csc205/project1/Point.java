@@ -3,6 +3,8 @@ package com.csc205.project1;
  * Point class
  * This class creates a point object with x and y coordinates
  * It also has methods to shift the point, calculate distance between two points and rotate the point
+ *  @author Gary Brown
+ *  @date 9/9/2024
  */
 
 public class Point {
@@ -52,10 +54,10 @@ public class Point {
     /* Returns the x coordinate of the point
      * @return x X-coordinate of the point
      */
-
     public double getX(){
         return this.x;
     }
+
     /* Returns the y coordinate of the point
      * @return y Y-coordinate of the point
      */
@@ -78,6 +80,7 @@ public class Point {
     public void shiftX(double n){
         this.x +=n;
     }
+
     /* Shifts the y coordinate of the point
      * @param n Value to shift the y coordinate
      */
@@ -89,14 +92,13 @@ public class Point {
      * @param p2 Point object to calculate the distance from
      * @return distance Distance between the two points
      */
-
     public double distance(Point p2){
         return Math.sqrt(Math.pow(this.x-p2.x,2) +Math.pow(this.y-p2.y,2));
     }
+
     /* Rotates the point by a given angle
      * @param angle Angle to rotate the point
      */
-
     public void rotate(double angle){
         //temp variables
         double xPrime= this.x;
@@ -105,14 +107,12 @@ public class Point {
         this.x = xPrime *Math.cos(angle) - yPrime*Math.sin(angle);
         this.y = xPrime *Math.sin(angle) + yPrime*Math.cos(angle);
     }
+
     /* Returns the point object as a string
      * @return String Point object as a string
      */
-
     public String toString(){
         return "Point"+this.counter+" : ("+this.x+","+this.y+")";
     }
-
-
 
 }

@@ -26,7 +26,7 @@ public class PointDriver {
 
         //rotate point 1
         p1.rotate(90);
-        System.out.println("The point p1 location after rotation is:"+p1.toString());
+        System.out.println("The point p1 location after rotation is: "+p1.toString());
 
         //Distance between points after rotation
         System.out.printf("This distance from point 1 to point 2 is: %.2f\n",p1.distance(p2));
