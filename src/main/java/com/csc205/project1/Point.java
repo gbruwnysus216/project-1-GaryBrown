@@ -12,7 +12,7 @@ public class Point {
     //Class fields
     private double x;
     private double y;
-    private int counter;
+    public static int counter;
 
     /*Default constructor
      * @param x X-coordinate of the point
@@ -21,7 +21,7 @@ public class Point {
     public Point(){
         this.x=0;
         this.y=0;
-        this.counter = 1;
+        counter++;
     }
 
     /*Parameterized constructor
@@ -31,7 +31,7 @@ public class Point {
     public Point(double x,double y){
         this.x = x;
         this.y = y;
-        this.counter++;
+        counter++;
     }
 
     //Mutator Methods
@@ -112,7 +112,7 @@ public class Point {
      * @return String Point object as a string
      */
     public String toString(){
-        return "Point"+this.counter+" : ("+this.x+","+this.y+")";
+        return String.format("P%d is located at (%.2f,%.2f)",counter, this.x, this.y);
     }
 
 }
